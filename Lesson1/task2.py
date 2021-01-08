@@ -9,7 +9,13 @@ x2 = int(input("Введите целочисленную координату x
 y2 = int(input("Введите целочисленную координату y2: "))
 k = (y2 - y1) / (x2 - x1)
 b = y1 - k * x1
-if b == 0:
-    print(f"y = {k}x")
-else:
-    print(f"y = {k}x + {b}")
+m = ""
+n = ""
+if b != 0:
+    n = f" + {b}"
+if k != 0:
+    if k == 1:
+        m = "x"
+    else:
+        m = f"{k}x"
+print(f"y = {m}{n}")
